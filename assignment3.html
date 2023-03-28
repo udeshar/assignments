@@ -8,14 +8,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/assignment3.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light py-3">
         <div class="container">
-            <a class="navbar-brand" href="#">Assignment 3</a>
+            <a class="navbar-brand fw-bold" href="#">Assignment 3</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -23,45 +24,145 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    
+
                 </ul>
-                <div class="nav_account" >
+                <div class="nav_account">
                     <p>U</p>
                 </div>
             </div>
         </div>
     </nav>
-    <div class="container">
-        <h3>Animations</h3>
-    </div>
-    <div class="container" >
-        <div class="row mainsection mt-5" >
-            <div class="col-lg-3" >
-                <div class="card">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit officiis cum et neque sint dicta mollitia maxime adipisci. Repellat dicta error id earum quaerat minima dolor consequuntur! Quae, at animi.</p>
+    <div class="mb-5">
+
+        <div class="container mt-4" >
+            <div class="anm"  data-aos="fade-up">
+                <div class="space" >
+                    <img class="sun" src="./images/sun.png" alt="">
+                </div>
+                <div class="water" >
+                    <div class="d-flex waves1" >
+                        <div class="waves"></div>
+                        <div class="waves"></div>
+                        <div class="waves"></div>
+                        <div class="waves"></div>
+                        <div class="waves"></div>
+                        <div class="waves"></div>
+                        <div class="waves"></div>
+                        <div class="waves"></div>
+                        <div class="waves"></div>
+                        <div class="waves"></div>
+                        <div class="waves"></div>
+                        <div class="waves"></div>
+                        <div class="waves"></div>
+                        <div class="waves"></div>
+                    </div>
+                    <div class="d-flex waves2" >
+                        <div class="waves"></div>
+                        <div class="waves"></div>
+                        <div class="waves"></div>
+                        <div class="waves"></div>
+                        <div class="waves"></div>
+                        <div class="waves"></div>
+                        <div class="waves"></div>
+                        <div class="waves"></div>
+                        <div class="waves"></div>
+                        <div class="waves"></div>
+                        <div class="waves"></div>
+                        <div class="waves"></div>
+                        <div class="waves"></div>
+                        <div class="waves"></div>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-3" >
-                <div class="card">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit officiis cum et neque sint dicta mollitia maxime adipisci. Repellat dicta error id earum quaerat minima dolor consequuntur! Quae, at animi.</p>
+            <p data-aos="fade-up" style="font-size: 12px; font-weight: light; margin : 5px 0px" >Note* transformations are used in this animation</p>
+        </div>
+
+        <div class="container mt-4">
+            <h4 class="mb-4" data-aos="fade-up">CSS Pseudo classes</h4>
+            <div class="row mainsection">
+                <div class="col-lg-3">
+                    <div class="card" data-aos="fade-up">
+                        <p>Active link</p>
+                        <code>:active</code>
+                        <a class="a1" href="#">Go To Some Page</a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-3" >
-                <div class="card">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit officiis cum et neque sint dicta mollitia maxime adipisci. Repellat dicta error id earum quaerat minima dolor consequuntur! Quae, at animi.</p>
+                <div class="col-lg-3">
+                    <div class="card" data-aos="fade-up">
+                        <p>Visited link</p>
+                        <code>:visited</code>
+                        <a class="a2" href="#">Go To Some Page</a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-3" >
-                <div class="card">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit officiis cum et neque sint dicta mollitia maxime adipisci. Repellat dicta error id earum quaerat minima dolor consequuntur! Quae, at animi.</p>
+                <div class="col-lg-3">
+                    <div class="card" data-aos="fade-up">
+                        <p>Hover the link</p>
+                        <code>:hover</code>
+                        <a class="a3" href="#">Go To Some Page</a>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="container mt-4">
+            <h4 class="mb-4" data-aos="fade-up">CSS Pseudo elements</h4>
+            <div class="row mainsection">
+                <div class="col-lg-3">
+                    <div class="card" data-aos="fade-up">
+                        <p>First line color</p>
+                        <code class="mb-3">::first-line</code>
+                        <p class="p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit hic natus sit rerum
+                            exercitationem soluta quas dolorem.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" data-aos="fade-up">
+                        <p>First letter style</p>
+                        <code class="mb-3">::first-letter</code>
+                        <p class="p2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit hic natus sit rerum
+                            exercitationem soluta quas dolorem.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" data-aos="fade-up">
+                        <p>Insert quotes using before, after</p>
+                        <code class="mb-3">::before, ::after</code>
+                        <p class="p3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit hic natus sit rerum
+                            exercitationem soluta quas dolorem.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" data-aos="fade-up">
+                        <p>Change marker style</p>
+                        <code class="mb-3">::marker</code>
+                        <ul class="ul">
+                            <li>line 1</li>
+                            <li>another line 2</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" data-aos="fade-up">
+                        <p>Selection style</p>
+                        <code class="mb-3">::marker</code>
+                        <p class="p4">Select this text and see the change.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            duration: 800, // values from 0 to 3000, with step 50ms
+            easing: 'ease',
+          });
+        </script>
 </body>
 
 </html>

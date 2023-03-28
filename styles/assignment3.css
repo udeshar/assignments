@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 
-html, body{
+html,
+body {
     font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
 }
 
-.navbar{
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.205);
-}
-.nav_account{
+.nav_account {
     background-color: red;
-    color : #fff;
+    color: #fff;
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -17,9 +16,138 @@ html, body{
     align-items: center;
     justify-content: center;
 }
+
 .nav_account p {
     margin-bottom: 0px;
 }
-.mainsection .card{
+
+.mainsection .card {
     padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.11);
+    border: 1px solid rgba(0, 0, 0, 0.118);
+    margin: 10px auto;
+    transition: .5s;
 }
+
+.mainsection .card:hover {
+    transform: scale(1.02);
+}
+
+.mainsection a{
+    margin-top: 5px;
+}
+
+/* unvisited link */
+.a1:active {
+    color: #aa0404 !important;
+  }
+  
+  /* visited link */
+  .a2:visited { 
+    color: #14db1b;
+  }
+  .a2 { 
+    color: #143cdb;
+  }
+  
+  /* mouse over link */
+  .a3:hover {
+    color: #FF00FF;
+  }
+  
+  /* selected link */
+  .a4:active {
+    color: #0000FF;
+  }
+
+  .p1::first-line{
+    color: coral;
+  }
+  .p2::first-letter{
+    color: coral;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .p3::before{
+    content : '"'
+  }
+  .p3::after{
+    content : '"'
+  }
+  ::marker{
+    color: #14db1b;
+  }
+  .p4::selection{
+    color: #ffffff;
+    background-color: rgb(103, 255, 80);
+  }
+
+  .anm{
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+    .anm .space{
+    height: 70%;
+    background: linear-gradient(rgb(255, 40, 40), rgb(255, 167, 60));
+  }
+      .anm .water{
+    height: 30%;
+    background-color: #00d9ff;
+  }
+.anm .water{
+    position: relative;
+}
+.anm .space{
+    position: relative;
+}
+  .anm .waves{
+    display: inline-block;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #00d9ff;
+    height: 70px;
+  }
+  .waves1{
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    animation: waves1 1s ease-in-out infinite;
+  }
+  .waves2{
+    position: absolute;
+    top: -10px;
+    left: -35px;
+    animation: waves1 1s ease-in-out .5s infinite alternate;
+  }
+  .sun{
+    position: absolute;
+    top : 50px;
+    right : 80px;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    animation: sun 10s linear infinite;
+  }
+
+  @keyframes sun{
+    0%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+  }
+
+  @keyframes waves1{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    } 
+    100%{
+        transform: translateY(0px);
+    }
+  }
